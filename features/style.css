@@ -1,0 +1,219 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 77%;
+    height: 72px;
+    margin: auto;
+    align-items: center;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+}
+.logo {
+
+}
+.menu-header {
+    display: flex;
+    width: 229px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.menu-header li a {
+    color: black;
+}
+.menu-header li a:hover {
+    mix-blend-mode: normal;
+    opacity: 0.3;
+}
+.bouton-header {
+    cursor: pointer;
+    width: 158px;
+    height: 48px;
+    color: white;
+    background-color: black;
+    border: 0;
+}
+.bouton-header:hover {
+    color: black;
+    background-color: #DFDFDF;;
+}
+
+/*******************************************main*********************************************************/
+
+main {
+    width: 100%;
+}
+section:nth-child(1) {
+    display: flex;
+    height: 490px;
+    margin-bottom: 160px;
+}
+.petite-partie {
+    position: relative;
+    width: 43%;
+    height: 100%;
+    background-color: black;
+}
+.container-petite-partie {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 387px;
+    height: 144px;
+
+    color: white;
+    font-family: 'DM Sans';
+    font-style: normal;
+}
+.titre-petite-partie {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+}
+.paragraphe-petite-partie {
+    margin-top: 21px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+}
+.grande-partie {
+    width: 58%;
+    height: 100%;
+}
+.image-grande-partie {
+    width: 100%;
+    height: 100%;
+}
+section:nth-child(2) {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 104px 5%;
+    grid-template-rows: 236px 236px;
+    width: 78%;
+    margin: auto;
+    margin-bottom: 160px;
+}
+.grid-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image-grid {
+    width: 80px;
+    height: 72px;
+}
+section:nth-child(3) {
+    width: 100%;
+    height: 280px;
+}
+.image-section-3 {
+    width: 100%;
+    height: 100%;
+}
+ /*********************************************footer*******************************************/
+
+ footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 250px;
+    background-color: black;
+}
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 77%;
+    height: 112px;
+}
+.element-footer {
+    display: flex;
+    width: auto;
+    height: 100%;
+}
+.element-gauche, .element-footer:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 169px;
+    height: 100%;
+    margin-right: 110px;
+}
+.image-reseau {
+    color: #FFFFFF;
+}
+.logo-reseau {
+    display: flex;
+    justify-content: space-between;
+}
+.lien-reseau {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.lien-reseau li a{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+}
+.element-footer:nth-child(2) {
+    width: auto;
+    text-align: right;
+}
+.footer-link {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+    letter-spacing: 2px;
+    color : white
+}
+.copyright {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: right;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+.marque {
+    color: white;
+}
+.image-reseau, .footer-link, .nav li a {
+    cursor: pointer;
+}
+nav li a:hover {
+    mix-blend-mode: normal;
+    opacity: 0.3;
+}
+.footer-link:hover {
+    text-decoration: underline;
+}
