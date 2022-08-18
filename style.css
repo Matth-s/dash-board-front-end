@@ -3,9 +3,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-li {
-    list-style: none;
-}
 a {
     text-decoration: none;
     color: white;
@@ -33,10 +30,10 @@ header {
     justify-content: space-between;
     cursor: pointer;
 }
-.menu-header li a {
+.menu-header a {
     color: black;
 }
-.menu-header li a:hover {
+.menu-header a:hover {
     mix-blend-mode: normal;
     opacity: 0.3;
 }
@@ -113,6 +110,7 @@ section:nth-child(1) .petite-partie .presentation {
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 2px;
+    cursor: pointer;
 }
 .pied-de-page:hover {
     text-decoration: underline;
@@ -174,7 +172,6 @@ section:nth-child(4) {
 .element-image:hover {
     bottom: 24px;
     border-bottom: 5px solid purple;
-
 }
 section:nth-child(5) {
     display: flex;

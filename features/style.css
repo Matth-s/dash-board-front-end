@@ -3,9 +3,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-li {
-    list-style: none;
-}
 a {
     text-decoration: none;
     color: white;
@@ -24,19 +21,16 @@ header {
     line-height: 16px;
     letter-spacing: 2px;
 }
-.logo {
-
-}
 .menu-header {
     display: flex;
     width: 229px;
     justify-content: space-between;
     cursor: pointer;
 }
-.menu-header li a {
+.menu-header a {
     color: black;
 }
-.menu-header li a:hover {
+.menu-header a:hover {
     mix-blend-mode: normal;
     opacity: 0.3;
 }
@@ -85,6 +79,8 @@ section:nth-child(1) {
     font-weight: 700;
     font-size: 40px;
     line-height: 48px;
+    letter-spacing: 4.16667px;
+    text-transform: uppercase;
 }
 .paragraphe-petite-partie {
     margin-top: 21px;
@@ -120,14 +116,69 @@ section:nth-child(2) {
 .image-grid {
     width: 80px;
     height: 72px;
+    margin-bottom: 25px;
+}
+.titre-grid {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 16px;
+}
+.paragraphe-grid {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.6;
 }
 section:nth-child(3) {
+    position: relative;
     width: 100%;
     height: 280px;
 }
 .image-section-3 {
     width: 100%;
     height: 100%;
+}
+.container-section-3 {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 77%;   
+    height: 100%;
+    top :0;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    color: #FFFFFF;
+    
+}
+.element-container-section:nth-child(1) {
+    height: 144px;
+    width: 440px;
+}
+.read-story {
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+}
+.texte-section-3 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 4.16667px;
+    text-transform: uppercase;
 }
  /*********************************************footer*******************************************/
 
@@ -184,6 +235,9 @@ section:nth-child(3) {
     text-align: right;
 }
 .footer-link {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
@@ -204,13 +258,10 @@ section:nth-child(3) {
     mix-blend-mode: normal;
     opacity: 0.5;
 }
-.marque {
-    color: white;
-}
-.image-reseau, .footer-link, .nav li a {
+.image-reseau, .footer-link, .nav a {
     cursor: pointer;
 }
-nav li a:hover {
+nav a:hover {
     mix-blend-mode: normal;
     opacity: 0.3;
 }

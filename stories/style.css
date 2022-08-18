@@ -36,10 +36,10 @@ header {
     justify-content: space-between;
     cursor: pointer;
 }
-.menu-header li a {
+.menu-header a {
     color: black;
 }
-.menu-header li a:hover {
+.menu-header a:hover {
     mix-blend-mode: normal;
     opacity: 0.3;
 }
@@ -164,13 +164,16 @@ section:nth-child(1) {
     line-height: 25px;
 }
 .read-story {
+    justify-content: space-between;
+    display: flex;
+
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
     color: #FFFFFF;
     font-size: 12px;
     line-height: 16px;
-    letter-spacing: 2px;
+    letter-spacing: 2px;   
 }
 
 /**************************************************footer*****************************************************************/

@@ -188,8 +188,10 @@ section:nth-child(2) {
     margin-top: 52px;
     width: 100%;
     height: 40px;
+    cursor: pointer;
+    background-color: black;
+    border: 0;
 
-    background-color: #000000;
     font-weight: 700;
     font-size: 12px;
     line-height: 16px;
@@ -202,15 +204,203 @@ section:nth-child(2) {
     color: white;
     padding: 73px 40px 40px 40px;
 }
-.titre-forfait:nth-child(2) {
-}
-.pick-forfait:nth-child(2) {
-    background: white ;
-    color: black;
-}
+
 .droite {
     margin-left: auto;
 }
 .gauche {
     margin-right: auto;
+}
+section:nth-child(3) {
+    margin-top: 160px;
+}
+table {
+    display: flex;
+    flex-direction: column;
+    margin-top: 160px;
+    width: 707px;
+    margin: auto;
+    border-collapse: collapse;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    color: #000000;
+}
+caption {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: 4.16667px;
+    text-transform: uppercase;
+    margin-bottom: 56px;
+}
+tr:nth-child(1) th {
+    width: 140px;
+    border-bottom: 1px solid black;
+    padding-bottom: 23px;
+}
+tr:nth-child(1) th:nth-child(1), .ligne-tableau td:nth-child(1) {
+    width: 287px;
+    text-align: left;
+    padding-left: 10px;
+}
+tr {
+    line-height:48px;
+}
+.ligne-tableau:nth-child(3) {
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+.ligne-tableau td {
+    width: 140px;
+}
+.ligne-tableau td img {
+    padding-left: 60px;
+}
+section:nth-child(4) {
+    margin-top: 160px;
+    position: relative;
+    width: 100%;
+    height: 280px;
+}
+.image-section-3 {
+    width: 100%;
+    height: 100%;
+}
+.container-section-3 {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 77%;   
+    height: 100%;
+    top :0;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    color: #FFFFFF;
+    
+}
+.element-container-section:nth-child(1) {
+    height: 144px;
+    width: 440px;
+}
+.read-story {
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+}
+.texte-section-3 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 4.16667px;
+    text-transform: uppercase;
+}
+
+ /*********************************************footer*******************************************/
+
+ footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 250px;
+    background-color: black;
+}
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 77%;
+    height: 112px;
+}
+.element-footer {
+    display: flex;
+    width: auto;
+    height: 100%;
+}
+.element-gauche, .element-footer:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 169px;
+    height: 100%;
+    margin-right: 110px;
+}
+.image-reseau {
+    color: #FFFFFF;
+}
+.logo-reseau {
+    display: flex;
+    justify-content: space-between;
+}
+.lien-reseau {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.lien-reseau li a{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+}
+.element-footer:nth-child(2) {
+    width: auto;
+    text-align: right;
+}
+.footer-link {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+    letter-spacing: 2px;
+    color : white
+}
+.copyright {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: right;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+.image-reseau, .footer-link, .nav a {
+    cursor: pointer;
+}
+nav a:hover {
+    mix-blend-mode: normal;
+    opacity: 0.3;
+}
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+/************************************************ JS ************************************************/
+
+.background-black {
+    background-color: black;
+}
+.rond-blanc  {
+    background-color: white;
 }
