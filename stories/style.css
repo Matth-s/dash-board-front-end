@@ -227,7 +227,6 @@ footer {
 }
 .element-footer:nth-child(2) {
     width: auto;
-    text-align: right;
 }
 .footer-link {
     font-family: 'DM Sans';
@@ -259,4 +258,39 @@ nav li a:hover {
 }
 .footer-link:hover {
     text-decoration: underline;
+}
+/***************************************** responsive *************************************************/
+@media screen and (min-width : 768px ) and (max-width: 1085px) {
+    header {
+        justify-content: space-around;
+        width: 100%;
+    }
+    .menu-header {
+        width: 50%;
+        justify-content: space-around;
+    }
+    .grid-container {
+        display: grid;
+        position: relative;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 500px 500px;
+    }
+    footer {
+        margin-top: 0;
+    }
+    .container-footer {
+        width: 90%;
+        justify-content: space-between;
+    }
+    .lien-reseau {
+        position: absolute;
+        flex-direction: row;
+        justify-content: space-between;  
+        margin-top: 30px;     
+        width: 315px;        
+        height: 20px;
+    }    
+    .element-footer:nth-child(2) {
+        margin-right: 20px;
+    }
 }
